@@ -1,0 +1,556 @@
+/* grouping & genearl style*/
+
+body{
+    padding-top: 50px;
+}
+
+.capitalize{ text-transform: capitalize}
+
+.navbar{ margin-bottom: 0 }
+
+.sec-padding{
+    padding-top: 60px;
+    padding-bottom: 60px  
+}
+
+.Sublist h3::after,
+.Standard h3::after,
+.awsome .h1::after,
+.pricing .h1::after,
+.testimonials .h1::after,
+.stylish .h1::after,
+.Contact .h1::after{
+    content: " ";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin-top: 20px;
+    background: #FF8B38
+}
+
+.Sublist .sublist-media,
+.awsome .awsome-icon{
+    border: 1px solid #FF8B38;
+    border-radius: 50%;
+    color: #FF8B38;
+    margin-top: 10px;
+    margin-right: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*********************************************************************************************************************************************************/
+
+/*******************************************************************************************************************************************************/
+/*start header*/
+
+header{
+    padding-top: 70px;
+    padding-bottom: 20px;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("img/header.png") no-repeat center fixed;
+    background-size: cover;
+    min-height: 620px
+}
+
+header .header-description{
+    color: #FFF;
+    padding-top: 50px
+}
+
+header .header-description h1{
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase
+}
+
+header .header-description h1 span { color: #FF8B38}
+
+header .header-description .lead:first-of-type{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+header .header-description .lead:last-of-type{ font-size: 15px }
+
+header .header-description hr {
+    width: 80px;
+    margin-left: 0
+}
+
+header .header-description .btn{
+    background-color: transparent;
+    margin-top: 10px;
+    border: 2px solid #FFF;
+    border-radius: 0
+}
+
+header .header-form { 
+    padding-top: 50px;
+    width: 65%;
+    margin: auto;
+}
+
+header .header-form h2{
+    background-color: #DDD;
+    margin-bottom: 0;
+    padding: 10px 0;
+    text-transform: capitalize;
+    font-size: 25px;
+    border-radius: 5px 5px 0 0
+}
+
+header .header-form h2 span{
+    color: #FF8B38
+}
+
+header .header-form form{ 
+    background: #FFF;
+    padding-top: 30px;
+    border-radius: 0 0 5px 5px
+}
+
+
+header .header-form .form-group { 
+    margin-bottom: 30px;
+    margin-left: 10px;
+    margin-right: 10px
+}
+
+header .header-form form input{
+    border: none;
+    border-bottom: 1px solid #ccc;
+    width: 90%;
+    font-size: 16px
+}
+
+
+header .header-form .input-lg { border-radius: 0}
+
+header .header-form .btn-lg { border-radius: 0 0 5px 5px} 
+/*end header*/
+/*******************************************************************************************************************************************************/
+
+/*******************************************************************************************************************************************************/
+/*start Social */
+.Social {min-height: 150px}
+
+.Social p { color: #888}
+
+.Social .btn-group{
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.btn-group button{
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    color: #888;
+    transition: all 0.5s linear
+}
+
+.btn-group button:first-of-type:hover,
+.btn-group button:nth-child(6):hover {
+    color: #3B5998
+}
+
+.btn-group button:nth-child(2):hover {
+    color: #1DA1F2
+}
+
+.btn-group button:nth-child(3):hover,
+.btn-group button:nth-child(4):hover,
+.btn-group button:nth-child(5):hover,
+.btn-group button:last-of-type:hover {
+    color: #BD081C
+}
+
+
+
+
+/*end Social */
+/*******************************************************************************************************************************************************/
+
+/*******************************************************************************************************************************************************/
+/*start tabs */
+.tabs {
+    padding-top: 70px;
+    padding-bottom: 40px;
+    background: #DDD
+}
+
+.tabs .tabs-btn li{
+    padding: 50px;
+    background-color: #222222;
+    border-bottom: 2px solid #FFF;
+    color: white;
+    font-size: 20px;
+    cursor: pointer
+}
+
+.tabs .tabs-btn li:last-of-type{ border-bottom: none }
+
+.active-tab{
+    background: #FF8B38 !important
+}
+
+.tabs  h2{ 
+    margin-top: 0;
+    margin-bottom: 30px
+}
+
+.tabs .lead{
+    margin-bottom: 30px;
+    color:#888;
+    font-size: 18px;
+    line-height: 1.7
+}
+
+.tabs .tabs-cont > div { display: none}
+
+.slected { 
+    display: block !important;
+    animation: appear 0.5s linear
+}
+
+@keyframes appear {
+    0%{
+        opacity: 0
+    }
+    
+    100%{
+        opacity: 1
+    }
+}
+/*end tabs */
+/*******************************************************************************************************************************************************/
+
+/*******************************************************************************************************************************************************/
+/*start Sublist */
+
+.Sublist img { margin-top: 50px }
+
+.Sublist h3,
+.Standard h3{ 
+    font-weight: bold;
+    margin-bottom: 20px
+}
+
+.Sublist .lead,
+.Standard .lead{
+    font-size: 16px;
+    padding-top: 5px;
+    color: #888
+}
+
+.Sublist .p-frist{ margin-bottom: 50px}
+
+.Sublist .media{ margin-bottom: 15px }
+
+.Sublist .sublist-media{
+    height: 40px;
+    width: 40px;
+}
+
+.Sublist .sublist-media i { font-size: 17px }
+
+/*end Sublist */
+/*******************************************************************************************************************************************************/
+
+/*******************************************************************************************************************************************************/
+/*start Standard */
+
+.Standard { background-color: #EEE }
+
+.Standard h3{  margin-top: 50px }
+
+/*end Standard */
+/*******************************************************************************************************************************************************/
+
+/*******************************************************************************************************************************************************/
+/*start awsome */
+
+.awsome .h1 { 
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px
+}
+
+.awsome .h1::after{ margin: 30px auto}
+
+.awsome .lead{
+    font-size: 15px;
+    color: #888
+}
+
+.awsome .p-frist{
+    margin-bottom: 50px
+}
+
+.awsome .awsome-icon{
+    border: 2px solid #FF8B38;
+    margin:0 auto 15px;
+    height: 80px;
+    width: 80px;
+}
+
+/*end awsome */
+/*******************************************************************************************************************************************************/
+
+/*******************************************************************************************************************************************************/
+/*start pricing */
+
+.pricing{ background-color: #EEE }
+
+.pricing .h1 { 
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px
+}
+
+.pricing .h1::after{ margin: 30px auto}
+
+.pricing .lead{
+    font-size: 15px;
+    color: #888
+}
+
+.pricing .p-frist{
+    margin-bottom: 70px
+}
+
+.pricing .pricing-top-box{
+    background-color: #333333;
+    color: white;
+    border-bottom: 5px solid #FF8B38
+}
+
+.pricing .frist,
+.pricing .last{
+    margin-top: 40px
+}
+
+.pricing .pricing-top-box h2{
+    margin: 0;
+    padding: 15px;
+    border-bottom: 1px solid #FFF
+}
+
+.pricing .pricing-top-box p:first-of-type{
+    font-size: 50px;
+    font-weight: bold;
+    border: 2px solid #FFF;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 10px;
+    line-height: 100px
+    
+}
+
+.pricing .pricing-top-box .sup-p{
+    padding: 10px;
+    background-color: #FF8B38;
+    margin-top: 5px;
+    margin-bottom: 0
+}
+
+.pricing .pricing-top-box p span { font-size: 30px }
+
+.pricing .pricing-top-box > span {
+    font-size: 15px;
+    color: #888;
+    font-style: italic;
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 15px
+}
+
+.pricing .pricing-top-buttom{ background-color: white }
+
+.pricing .pricing-top-buttom li{
+    padding: 10px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    color: #888
+}
+
+.pricing .pricing-top-buttom li:last-of-type{ border: none}
+
+/*end pricing */
+/*******************************************************************************************************************************************************/
+
+/*******************************************************************************************************************************************************/
+/*start Testimonials */
+
+.testimonials .h1 { 
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px
+}
+
+.testimonials .h1::after{ margin: 30px auto}
+
+.testimonials .lead{
+    font-size: 15px;
+    color: #888
+}
+
+.testimonials .p-frist{
+    margin-bottom: 50px
+}
+
+.testimonials .testimonials-cont{
+    position: relative;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #888;
+    background-color: #EEE;
+    margin-bottom: 30px
+}
+
+.testimonials .testimonials-cont::after{
+    content: " ";
+    height: 20px;
+    width: 20px;
+    border: 20px solid transparent;
+    border-top: 20px solid #EEE;
+    position: absolute;
+    bottom: -32px;
+    left: 15px
+}
+
+.testimonials .media{ margin-bottom: 15px}
+
+.testimonials .media .media-body{ padding-top: 20px}
+
+.testimonials .media .media-body p{color: #888}
+
+/*end Testimonials */
+/*******************************************************************************************************************************************************/
+
+/*******************************************************************************************************************************************************/
+/*start Stylish */
+
+.stylish{
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("img/stylish.png") no-repeat center fixed;
+    background-size: cover;
+    min-height: 330px
+}
+
+
+.stylish .h1 {
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px
+}
+
+.stylish .h1::after{ 
+    margin: 30px auto;
+    background-color: white
+}
+
+.stylish .lead{
+    font-size: 15px;
+    color: #999
+}
+
+.stylish .p-frist{
+    margin-bottom: 50px
+}
+
+.stylish .btn{
+    background-color: transparent;
+    margin-top: 10px;
+    border: 2px solid #FFF;
+    border-radius: 0
+}
+
+
+/*end Stylish */
+/*******************************************************************************************************************************************************/
+
+/*******************************************************************************************************************************************************/
+/*start contact  */
+
+.Contact .h1 { 
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px
+}
+
+.Contact .h1::after{ margin: 30px auto}
+
+.Contact .lead{
+    font-size: 15px;
+    color: #888
+}
+
+.Contact .p-frist{
+    margin-bottom: 50px
+}
+
+.Contact .btn{
+    margin-top: 20px;
+
+}
+
+.Contact .form-group { 
+    margin-bottom: 30px;
+    margin-left: 10px;
+    margin-right: 10px
+}
+
+.Contact form input{
+    border: none;
+    border-bottom: 1px solid #ccc;
+    width: 90%;
+    font-size: 16px;
+    box-shadow: none
+}
+
+.Contact .input-lg{ border-radius: 0}
+
+.Contact textarea{
+    height: 198px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    font-size: 16px;
+    box-shadow: none
+}
+
+
+
+
+/*end contact  */
+/*******************************************************************************************************************************************************/
+
+/*******************************************************************************************************************************************************/
+/*start footer  */
+
+footer{
+    background-color: #000;
+    color: white;
+    padding: 20px
+}
+
+footer .lead{
+    padding: 0;
+    margin: 0
+}
+
+/*end footer  */
+/*******************************************************************************************************************************************************/
+
+
+
+
+
+
+
